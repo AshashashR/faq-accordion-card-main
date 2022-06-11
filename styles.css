@@ -34,16 +34,23 @@ h1, h2, h3 {
     margin-top: 0;
 }
 
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
 .card {
     background-color: white;
     max-width: 56rem;
-    margin: 3rem;
-    padding: 0 2.875rem 1.5rem 2.875rem;
+    width: 100%;
+    /* margin: 3rem; */
+    padding: 0 1.5rem 3rem 1.5rem;
     border-radius: 20px;
     background-image: url(/images/bg-pattern-mobile.svg);
     background-size: 15rem;
     background-repeat: no-repeat;
     background-position: center 0%;
+    box-shadow: 0 30px 40px -2px rgb(76 76 175);
 }
 
 .card__box {
@@ -62,6 +69,10 @@ h1, h2, h3 {
     width: 100%;
     height: auto;
     max-width: 15rem;
+    display: block;
+}
+
+.card__image img.img__desktop {
     display: block;
 }
 
@@ -94,10 +105,6 @@ h1, h2, h3 {
     width: 100%;
 }
 
-.accordion__question:focus {
-
-}
-
 .accordion__question::after {
     display: block;
     content: '';
@@ -128,7 +135,7 @@ h1, h2, h3 {
 .accordion__content {
     font-size: 0.75rem;
     line-height: 1.4;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .accordion__collapse.collapse {
@@ -136,7 +143,9 @@ h1, h2, h3 {
 }
 
 .accordion__collapse.collapsing {
-    
+    height: 0;
+    overflow: hidden;
+    transition: height 300ms ease;
 }
 
 .accordion__collapse.open {
@@ -146,9 +155,19 @@ h1, h2, h3 {
 /* DESKTOP STYLES */
 
 @media (min-width: 56em) {
+
     body {
-        padding: 2rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    h1 {
+        text-align: left;
+    }
+
     .card {
         display: flex;
         margin: 0 auto;
@@ -158,6 +177,7 @@ h1, h2, h3 {
         background-repeat: no-repeat;
         background-position: -13% center;
         position: relative;
+        box-shadow: 0 40px 50px -2px rgb(76 76 175);
     }
     
     .card__image,
@@ -168,10 +188,11 @@ h1, h2, h3 {
     .card__box {
         display: block;
         position: absolute;
-        top: 56%;
+        top: 57%;
         left: 0;
         transform: translateX(-50%) translateY(-50%);
         z-index: 1;
+        
     }
 
     .card__image {
@@ -186,6 +207,9 @@ h1, h2, h3 {
         transform: translateX(-4rem);
         max-width: 25rem;
         left: auto;
+    }
+    .card__image img.img__mobile {
+        display: none;
     }
 
     .card__text {
