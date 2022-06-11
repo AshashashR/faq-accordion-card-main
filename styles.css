@@ -46,7 +46,7 @@ h1 {
     /* margin: 3rem; */
     padding: 0 1.5rem 3rem 1.5rem;
     border-radius: 20px;
-    background-image: url(/images/bg-pattern-mobile.svg);
+    background-image: url(./images/bg-pattern-mobile.svg);
     background-size: 15rem;
     background-repeat: no-repeat;
     background-position: center 0%;
@@ -110,7 +110,7 @@ h1 {
     content: '';
     height: 1rem;
     border: none;
-    background-image: url(/images/icon-arrow-down.svg);
+    background-image: url(./images/icon-arrow-down.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -173,7 +173,7 @@ h1 {
         display: flex;
         margin: 0 auto;
         padding: 4.375rem 6.25rem 4.375rem 0;
-        background-image: url(/images/bg-pattern-desktop.svg);
+        background-image: url(./images/bg-pattern-desktop.svg);
         background-size: 95%;
         background-position: -1150% 70%;
         box-shadow: 0 40px 50px -2px rgb(76 76 175);
