@@ -169,14 +169,13 @@ h1 {
     }
 
     .card {
+        position: relative;
         display: flex;
         margin: 0 auto;
         padding: 4.375rem 6.25rem 4.375rem 0;
         background-image: url(/images/bg-pattern-desktop.svg);
-        background-size: 45%;
-        background-repeat: no-repeat;
-        background-position: -13% center;
-        position: relative;
+        background-size: 95%;
+        background-position: -1150% 70%;
         box-shadow: 0 40px 50px -2px rgb(76 76 175);
     }
     
